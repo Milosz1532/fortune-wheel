@@ -1,0 +1,95 @@
+.App {
+	margin: 0;
+	padding: 0;
+	background-color: #f0f0f0;
+	overflow: hidden;
+	text-align: center;
+}
+
+.main-wheel {
+	display: inline-flex;
+	position: relative;
+	overflow: hidden;
+}
+
+.wheel {
+	display: block;
+	width: 500px;
+	height: 500px;
+	background-color: #ffd700;
+	border-radius: 50%;
+	box-sizing: border-box;
+	padding: 8px;
+}
+
+.wheel::before {
+	border-radius: 100%;
+	content: '';
+	top: -10px;
+	left: -10px;
+	bottom: -10px;
+	right: -10px;
+	position: absolute;
+	z-index: -1;
+}
+
+.main-wheel::after {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 45%;
+	transform: translate(-50%, -50%);
+	border: 25px solid transparent;
+	border-bottom-color: #ffd700;
+	transform: rotate(180deg);
+	z-index: 100;
+}
+
+#spin {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	background-color: #e2e2e2;
+	text-transform: uppercase;
+	border: 8px solid #fff;
+	font-weight: bold;
+	font-size: 20px;
+	color: #a2a2a2;
+	width: 80px;
+	height: 80px;
+	font-family: sans-serif;
+	border-radius: 50%;
+	cursor: pointer;
+	outline: none;
+	letter-spacing: 1px;
+}
+
+#spin p {
+	opacity: 0.3;
+}
+
+#spin:hover > p {
+	opacity: 1;
+}
+
+#logo {
+	font-size: 30px;
+	color: #595959;
+}
+
+.empty-wheel {
+	border: 5px solid #ffd700;
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.empty-wheel p {
+	display: block;
+	color: #595959;
+}
