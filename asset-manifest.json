@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/milosz1532.github.io/fortune-wheel/static/css/main.fee754c5.css",
+    "main.js": "/milosz1532.github.io/fortune-wheel/static/js/main.d4e7b9be.js",
+    "static/media/happy.svg": "/milosz1532.github.io/fortune-wheel/static/media/happy.9be8ebc4935fea7cfe4c914dab0bca5e.svg",
+    "index.html": "/milosz1532.github.io/fortune-wheel/index.html",
+    "main.fee754c5.css.map": "/milosz1532.github.io/fortune-wheel/static/css/main.fee754c5.css.map",
+    "main.d4e7b9be.js.map": "/milosz1532.github.io/fortune-wheel/static/js/main.d4e7b9be.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fee754c5.css",
+    "static/js/main.d4e7b9be.js"
+  ]
+}
